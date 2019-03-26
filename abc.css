@@ -1,0 +1,82 @@
+﻿
+
+@-webkit-keyframes scrollBad {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -320px;
+    }
+}
+
+@keyframes scrollBad {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -320px;
+    }
+}
+
+@-webkit-keyframes scrollGood {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -320px, 0);
+        transform: translate3d(0, -320px, 0);
+    }
+}
+
+@keyframes scrollGood {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -320px, 0);
+        transform: translate3d(0, -320px, 0);
+    }
+}
+
+body {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    background-color: #31CC70;
+    background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+    background-position: center center;
+    background-size: 500px;
+    -webkit-animation: scrollBad 5s linear infinite;
+    animation: scrollBad 5s linear infinite;
+    z-index: 1;
+}
+
+
+h1 {
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+#hi {
+    width: 100px;
+    height: 100px;
+    color: red;
+    z-index: 3;
+}
