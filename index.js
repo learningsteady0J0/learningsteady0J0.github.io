@@ -4,9 +4,9 @@ var mainIframe = document.getElementById("main_iframe")
 navList.addEventListener('click', function (event) {
     console.log(event.target.textContent);
     target = event.target.textContent;
-    if (target === "Main Home") {
+    if (target === "Home") {
         console.log(1);
-        mainIframe.setAttribute("src", "Main Home.html");
+        mainIframe.setAttribute("src", "MainHome.html");
     }
     else if (target === "Study Timeline") {
         console.log(1);
